@@ -40,30 +40,30 @@
                 <h3>Thông tin tài khoản</h3>
                 <div class="form-group">
                     <label>Username</label>
-                    <input type="text" class="form-control" name="username" 		value="${session}" readonly>
+                    <input type="text" class="form-control" name="username" 		value="${account.username}" readonly>
                 </div>
                 <div class="form-group">
-                    <input type="password" style="display: none;" class="form-control" id="oldpass" value="${session}">
+                    <input type="password" style="display: none;" class="form-control" id="oldpass" value="${sessionScope}">
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="password" class="form-control" name="pass" value="${session}">
+                    <input type="password" class="form-control" name="pass" value="${account.password}">
                 </div>
                 <div class="form-group">
                     <label>Name </label>
-                    <input type="email" class="form-control" name="name" value="${session}">
+                    <input type="email" class="form-control" name="name" value="${account.name}">
                 </div>
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="email" class="form-control" name="email" value="${session}">
+                    <input type="email" class="form-control" name="email" value="${account.email}">
                 </div>
                 <div class="form-group">
                     <label>Age </label>
-                    <input type="text" class="form-control" name="address" value="${session}">
+                    <input type="text" class="form-control" name="address" value="${account.age}">
                 </div>
                 <div class="form-group">
                     <label>Phone</label>
-                    <input type="text" class="form-control" name="phone" value="${session}">
+                    <input type="text" class="form-control" name="phone" value="${account.phone}">
                 </div>
                 <input type="submit" class="btn btn-primary" value="Save"/>
                 <small id="emailHelp" class="form-text text-muted">Thông tin sẽ được bảo mật</small>
